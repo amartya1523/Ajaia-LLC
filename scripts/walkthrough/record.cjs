@@ -308,7 +308,7 @@ function slide({ eyebrow, title, subtitle, bullets, footer, big }) {
         '<b>9 automated API tests</b> — permissions, conflicts, sanitization, file import.',
         '<b>AI sped up</b> scaffolding, UI and tests; architecture and scope decisions stayed mine.',
         '<b>Browser verification caught a real bug</b> — an editor call caused phantom saves every 4s; fixed at the source.',
-        '<b>Narration</b> in this video is AI-generated.',
+        '<b>Narration</b> generated with the ElevenLabs API.',
       ],
     }));
   });

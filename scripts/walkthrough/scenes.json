@@ -53,7 +53,7 @@
  },
  {
   "id": "14_ai",
-  "text": "On quality and AI. There are nine automated API tests covering the permission rules, conflict handling, sanitization, and file import. AI materially sped up scaffolding, the UI, and the tests. I verified everything by running the tests and driving the real app in a browser, which caught a real bug, where an editor call was triggering a phantom save every few seconds. I fixed it at the source. The narration in this video is AI generated."
+  "text": "On quality and AI. There are nine automated API tests covering the permission rules, conflict handling, sanitization, and file import. AI materially sped up scaffolding, the UI, and the tests. I verified everything by running the tests and driving the real app in a browser, which caught a real bug, where an editor call was triggering a phantom save every few seconds. I fixed it at the source. The narration in this video was generated with ElevenLabs."
  },
  {
   "id": "15_outro",

@@ -3,7 +3,7 @@
 ## Tools used
 
 - **Claude Code** (agentic coding assistant in the terminal/desktop app): scaffolding, implementation, tests, browser verification, documentation drafts.
-- **Text‑to‑speech for the walkthrough narration:** ElevenLabs API (narration pipeline in `scripts/walkthrough/`), with a macOS system voice as fallback when the API quota ran out. The narration script was written for this project; the voice is AI‑generated.
+- **ElevenLabs text‑to‑speech API** for the walkthrough narration (`eleven_multilingual_v2`, pipeline in `scripts/walkthrough/`). The narration script was written for this project; the voice is AI‑generated, and the video says so.
 - **Playwright + ffmpeg** (driven by scripts the assistant wrote) to record the walkthrough as a scripted end‑to‑end run against a fresh database.
 
 ## Where AI materially sped things up
