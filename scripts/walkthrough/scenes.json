@@ -1,0 +1,62 @@
+[
+ {
+  "id": "01_intro",
+  "text": "Hi, I'm Amartya. This is Ajaia Docs, a lightweight collaborative document editor I built for the Ajaia full stack assignment. In the next few minutes, I'll walk through the main user flow, what works end to end, what I intentionally cut, the key implementation decisions, and how AI fit into my workflow."
+ },
+ {
+  "id": "02_login",
+  "text": "Authentication is simulated with three seeded accounts, Alice, Bob, and Carol, so reviewers can test sharing without creating an account. Sessions are real, though. Each sign in creates a server side session behind an HTTP only cookie. Let's sign in as Alice."
+ },
+ {
+  "id": "03_dashboard",
+  "text": "The dashboard separates documents I own from documents shared with me, and every row carries a clear badge: owner, can edit, or view only. From here I can start a blank document, or import a file."
+ },
+ {
+  "id": "04_create",
+  "text": "Creating a document drops me straight into the title, so renaming is immediate. The editor is built on TipTap, which sits on top of ProseMirror. It supports headings, bold, italic, and underline, bulleted and numbered lists, quotes, and alignment, with familiar keyboard shortcuts. Every change autosaves after a short pause, and the status next to the title tells me when it's safe."
+ },
+ {
+  "id": "05_reload",
+  "text": "If I refresh the page, the document comes back exactly as I left it. Content is stored as sanitized HTML in SQLite, so formatting survives the round trip, and anything unsafe, like scripts or event handlers, is stripped on the server."
+ },
+ {
+  "id": "06_upload",
+  "text": "For file upload, I support plain text, Markdown, and Word dot docx files, up to two megabytes, and the UI says so. Uploading a Markdown file turns it into a new editable document, with headings, lists, and emphasis preserved. Inside an existing draft, Insert file converts a Word document and drops it in at the cursor. An unsupported file type is rejected with a clear message."
+ },
+ {
+  "id": "07_share",
+  "text": "Sharing is owner controlled. Alice opens the share dialog, grants Bob edit access, and gives Carol view only access. The owner can change a role or revoke access at any time, and only owners ever see the share button."
+ },
+ {
+  "id": "08_live",
+  "text": "Now, while Alice has the document open, Bob saves a change from his own account. Within a few seconds, Alice's editor picks it up and tells her who made the change. Every save carries a version number, so if two people edit at the same moment, the server returns a conflict instead of silently overwriting someone's work, and the user chooses which version to keep."
+ },
+ {
+  "id": "09_bob",
+  "text": "Signing in as Bob, the document shows up under Shared with me, marked can edit, from Alice."
+ },
+ {
+  "id": "10_carol",
+  "text": "And as Carol, the viewer, the same document opens read only. The toolbar is gone, and a banner explains why. The API enforces the same rules: viewers get a four oh three on any write, and people with no access get a four oh four, so document IDs never leak."
+ },
+ {
+  "id": "11_export",
+  "text": "As one small stretch feature, any document can be exported to Markdown or HTML, or printed to PDF."
+ },
+ {
+  "id": "12_decisions",
+  "text": "A few key decisions. It's a single Node service, Express plus Node's built in SQLite, serving the React app, so there's one deployable unit and no paid dependencies. All access checks go through one server function, so the permission rules live in exactly one place. And I chose autosave with version checks over real time co-editing, because it's reliable within the time box."
+ },
+ {
+  "id": "13_cuts",
+  "text": "What I intentionally deprioritized: real passwords and OAuth, live cursors and character level co-editing, comments, version history, and images inside documents. With another two to four hours, I'd add version history first, then presence indicators."
+ },
+ {
+  "id": "14_ai",
+  "text": "On quality and AI. There are nine automated API tests covering the permission rules, conflict handling, sanitization, and file import. AI materially sped up scaffolding, the UI, and the tests. I verified everything by running the tests and driving the real app in a browser, which caught a real bug, where an editor call was triggering a phantom save every few seconds. I fixed it at the source. The narration in this video is AI generated."
+ },
+ {
+  "id": "15_outro",
+  "text": "The live link, the seeded accounts, and setup instructions are all in the README. Thanks for watching. Thank you, this was Amartya. Bye!"
+ }
+]

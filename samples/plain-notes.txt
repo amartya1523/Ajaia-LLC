@@ -1,0 +1,6 @@
+Customer call notes
+
+The team wants a faster way to draft and share internal docs.
+They mostly paste content from Word and Markdown files.
+
+Follow up next week with a demo.
