@@ -7,6 +7,7 @@
 
 - **Live product URL:** LIVE_URL_PLACEHOLDER
 - **Walkthrough video:** https://drive.google.com/file/d/1xrYKcF4SgEHFb2ON5023OKuqjVjcpWG0/view?usp=sharing
+- **Submission folder (Google Drive):** https://drive.google.com/drive/folders/1RZqpQvz2jbQ_8LMnaT5QlWhg93tagQBm?usp=sharing
 - **Source repository:** https://github.com/amartya1523/Ajaia-LLC
 
 ## Test accounts (no passwords; choose on the login screen)

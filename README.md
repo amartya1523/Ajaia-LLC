@@ -4,6 +4,8 @@ A lightweight collaborative document editor: create, edit, import and share rich
 
 - **Live app:** _see `SUBMISSION.md` (Live URL)_
 - **Walkthrough video (4:32):** [https://drive.google.com/file/d/1xrYKcF4SgEHFb2ON5023OKuqjVjcpWG0/view?usp=sharing](https://drive.google.com/file/d/1xrYKcF4SgEHFb2ON5023OKuqjVjcpWG0/view?usp=sharing)
+- **Submission folder (Google Drive):** [https://drive.google.com/drive/folders/1RZqpQvz2jbQ_8LMnaT5QlWhg93tagQBm?usp=sharing](https://drive.google.com/drive/folders/1RZqpQvz2jbQ_8LMnaT5QlWhg93tagQBm?usp=sharing)
+- **Source code:** https://github.com/amartya1523/Ajaia-LLC
 - **Architecture note:** [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - **AI workflow note:** [`docs/AI_WORKFLOW.md`](docs/AI_WORKFLOW.md)
 
