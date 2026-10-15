@@ -6,7 +6,7 @@ const { chromium, request } = require('playwright');
 
 const ENGINE = process.env.ENGINE || 'say';
 const BASE = process.env.BASE || 'http://localhost:4100';
-const SAMPLES = '/Users/amartyavikramsingh/Desktop/project/Ajaia/samples';
+const SAMPLES = path.resolve(__dirname, '../../samples');
 const durations = JSON.parse(fs.readFileSync(`audio_${ENGINE}/durations.json`, 'utf8'));
 const W = 1280, H = 800;
 const PAD = 0.7; // seconds of breathing room after each clip
