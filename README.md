@@ -3,7 +3,7 @@
 A lightweight collaborative document editor: create, edit, import and share rich‑text documents, with persistence and owner/editor/viewer access control.
 
 - **Live app:** _see `SUBMISSION.md` (Live URL)_
-- **Walkthrough video:** _see `VIDEO_URL.txt`_ (local copy: `Ajaia-Docs-Walkthrough.mp4`)
+- **Walkthrough video (4:32):** [https://drive.google.com/file/d/1xrYKcF4SgEHFb2ON5023OKuqjVjcpWG0/view?usp=sharing](https://drive.google.com/file/d/1xrYKcF4SgEHFb2ON5023OKuqjVjcpWG0/view?usp=sharing)
 - **Architecture note:** [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - **AI workflow note:** [`docs/AI_WORKFLOW.md`](docs/AI_WORKFLOW.md)
 
